@@ -25,9 +25,9 @@ const User = () => {
         if (error) return <>Oh no, there was an error</>
         else if (isLoading) return <>Loading...</>
         else if (data)
-            return data.map((user) => {
+            return data.map((user, index) => {
                 return (
-                    <div style={{ display: 'flex', flexDirection: 'column' }}>
+                    <div key={index} style={{ display: 'flex', flexDirection: 'column' }}>
                         <p>{user.id}</p>
                         <p>{user.firstName}</p>
                         <p>{user.lastName}</p>

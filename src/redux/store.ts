@@ -19,11 +19,8 @@ const epicMiddleware = createEpicMiddleware()
 // app's store
 export const store = configureStore({
   reducer: rootReducers,
-  // middleware:  [epicMiddleware ]
   middleware: (getDefaultMiddleware) => {
-    getDefaultMiddleware().concat(contactsApi.middleware)
-
-    return getDefaultMiddleware()
+    return getDefaultMiddleware().concat(contactsApi.middleware).concat(epicMiddleware)
   }
 });
 
