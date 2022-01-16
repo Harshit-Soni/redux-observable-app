@@ -1,0 +1,8 @@
+.userDiv {
+    margin-top: 5em;
+}
+.subDiv {
+    width: 100vh;
+    display: flex;
+    justify-content: space-between;
+}
