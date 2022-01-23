@@ -1,1 +1,1 @@
-Learning redux-observable
+Learning redux-observable via practising
